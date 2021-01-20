@@ -211,9 +211,9 @@ url("/offer_template/static/src/font/gadugi-normal.ttf") format("truetype");
                     </p>
                 </div>
                 <div style="clear: both; float: right;  width: 50%; text-align: right;">
-                    <img src="/offer_template/static/src/img/Picture15.png" style="float:right;padding-left: 20px;"/>
+                    <img src="/offer_template/static/src/img/Picture15.jpeg" style="float:right;padding-left: 20px;"/>
                     <p>
-                        <h6 style="padding-top: 50px;">Myriam Saadan – TIS Coordinator</h6>
+                        <h6 style="padding-top: 50px;">Michael De Schepper – TIS Coordinator</h6>
                     </p>
                 </div>
 
