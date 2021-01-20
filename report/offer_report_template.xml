@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_saleoffer_document">
+        <!--    <t t-call="web.external_layout">-->
+        <t t-set="doc" t-value="doc.with_context(lang=doc.partner_id.lang)"/>
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <div class="o_boxed_header">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="/offer_template/static/src/img/logo.png" style="width:250px"/>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div t-attf-class="article o_report_layout_clean" t-att-data-oe-model="doc and doc._name" t-att-data-oe-id="doc and doc.id" t-att-data-oe-lang="doc and doc.env.context.get('lang')">
+            <t t-call="web.address_layout"/>
+            <t t-raw="0"/>
+            <style type="text/css">
+                <![CDATA[
+
+
+/* Gadugi */
+
+@font-face {
+
+font-family: 'Gadugi';
+
+font-style: normal;
+
+src:url("/offer_template/static/src/font/gadugi-normal.woff") format("woff"),
+
+url("/offer_template/static/src/font/gadugi-normal.ttf") format("truetype");
+
+}
+]]>
+                body, span,p,h1, h2, h3, h4, h5 {
+                font-family: 'Gadugi';
+                }
+                h6{
+                font-weight: 700;
+                }
+            </style>
+            <div class="page" style="page-break-after:always;">
+                <div class="oe_structure"/>
+                <span t-field="doc.offer_page2"/>
+            </div>
+            <div class="page" name="title1" style="page-break-after:always;">
+                <h1>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:21px;">1</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:21px;">A propos de RealDev
+                    </span>
+                </h1>
+                <p>
+                    RealDev est une entreprise dynamique avec une expérience du terrain de plusieurs années au sein de
+                    l’Industrie 4.0.
+                </p>
+                <p>
+                    Notre modèle Totally integrated Service™ nous permet de vous proposer une aide via différents
+                    services :
+                </p>
+                <p style="position: relative;">
+                    <img src="/offer_template/static/src/img/Picture1.png"
+                         style="width: 50%; margin-left: 25%; margin-right: 25%;"/>
+                </p>
+
+                <p>
+                    RealDev développe des solutions afin de faire de la transformation digitale de ses clients un réel
+                    succès. RealDev accompagne les entreprises dans leur épopée vers l’industrie 4.0 au travers de
+                    conseils ou de réalisation de projets. 
+                </p>
+                <p>
+                    Les TIS répond parfaitement à notre désir de vous fournir la meilleure expérience client en vous
+                    garantissant un véritable développement dans votre business !
+                </p>
+                <p>
+                    RealDev est un acteur clé reconnu dans son expertise dans les domaines suivants : 
+                </p>
+                <p style="position: relative;">
+                    <img src="/offer_template/static/src/img/Picture2.png"
+                         style="width: 50%; margin-left: 25%; margin-right: 25%;"/>
+                </p>
+                <p>
+                    En tant que référence avec une présence locale, nous sommes flexibles et capable de répondre aux
+                    exigences de chaque client. 
+                </p>
+                <p>
+                    Notre expertise inclus les solutions les plus innovantes et références métiers dans le domaine de
+                    l’industrie 4.0.
+                </p>
+                <p style="position: relative;">
+                    <img src="/offer_template/static/src/img/Picture3.png"
+                         style="width: 80%; margin-left: 10%; margin-right: 10%;"/>
+                </p>
+                <p>
+                    RAL - Ajouter la partie BMS (Disego), système spéciaux + ERP + power BI , A.I + MSP Online, etc
+                </p>
+                <p>
+                    Notre méthodologie de projet est basée sur notre expérience et calquée sur les standards PMBOCK
+                    (https://www.pmi.org/)
+                </p>
+                <p style="position: relative;">
+                    <img src="/offer_template/static/src/img/Picture4.png"
+                         style="width: 6O%;margin-right: 5%;margin-left: 5%;"/>
+                </p>
+                <br/>
+                <p>
+                    Chaque collaborateur chez RealDev peut compter sur le support inconditionnel de notre Head Quarter
+                    qui se tient prêt fournir le support nécessaire pour absorber des pics de charges ou renforcer les
+                    compétences au travers de la RealDev Academy.
+                </p>
+                <p style="position: relative;">
+                    <img src="/offer_template/static/src/img/Picture5.png"
+                         style="width: 5O%; margin-right: 5%; margin-left: 5%;"/>
+                </p>
+
+                <p>
+                    Pour chaque projet, la confiance est la base dans toutes nos relations ; nous mettons en place un
+                    climat de confiance afin de développer des relations durables avec nos clients. Nous avons l’audace
+                    de relever les défis les plus innovants et d’utiliser la technologie de pointe. Nous sommes
+                    indépendants : nous choisissons nos méthodes de travail sans influence externe. Nous nous engageons
+                    à trouver la solution parfaite pour nos clients en étant les plus performants possible.
+                </p>
+            </div>
+            <div class="page" style="page-break-after:always;">
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:21px;">1.1</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:21px;">Notre Board</span>
+                </h3>
+
+
+                    <div style="clear:both;">
+                        <img src="/offer_template/static/src/img/Picture6.png"
+                             style="float:left;padding-bottom: 15px; padding-right: 20px; "/>
+                        <div style="padding-top: 2%; padding-left: 12%;">
+                            <h6>Abdelmounaim Boukamher – Chief Executive Officer</h6>
+                            Avec une grande expérience dans la finance et la gestion administrative des entreprises, M.
+                            Boukamher a pour mission de définir la vision de l’entreprise et de la traduire en une
+                            stratégie viable pour l’entreprise.
+                        </div>
+                    </div>
+
+                    <div style="clear:both;">
+                         <br/><br/>
+                        <img src="/offer_template/static/src/img/Picture7.png"
+                             style="float:left;padding-bottom: 15px; padding-right: 20px;"/>
+                        <div style="padding-top: 2%; padding-left: 12%;">
+                            <h6>Younes Boukamher – Chief Operating Officer</h6>
+                            Avec une grande expérience dans la finance et la gestion administrative des entreprises, M.
+                            Boukamher a pour mission de définir la vision de l’entreprise et de la traduire en une
+                            stratégie viable
+                        </div>
+                    </div>
+                    <div style="clear:both;">
+                         <br/><br/>
+                        <img src="/offer_template/static/src/img/Picture8.png"
+                             style="float:left;padding-bottom: 15px; padding-right: 20px;"/>
+                        <div style="padding-top: 2%; padding-left: 12%;">
+                            <h6>David Di Graci – TIS Director</h6>
+                            Avec une grande expérience dans la finance et la gestion administrative des entreprises, M.
+                            Boukamher a pour mission de définir la vision de l’entreprise et de la traduire en une
+                            stratégie viable pour l’entreprise.
+                        </div>
+                    </div>
+                    <div style="clear:both;">
+                         <br/><br/>
+                        <img src="/offer_template/static/src/img/Picture9.png"
+                             style="float:left; padding-right: 20px;"/>
+                        <div style="padding-top: 2%; padding-left: 12%;">
+                            <h6>Mohamed Reda Ali Tatar – Operational Exellence Director</h6>
+                            Avec une grande expérience dans la finance et la gestion administrative des entreprises, M.
+                            Boukamher a pour mission de définir la vision de l’entreprise et de la traduire en une
+                            stratégie viable pour l’entreprise.
+                        </div>
+                    </div>
+                </div>
+                <h3 style="clear:both;">
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:21px;">1.2</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:21px;">Notre Management</span>
+                </h3>
+                <br/>
+                <div style="clear: both; float: left;  width: 50%; text-align: left;">
+                    <img src="/offer_template/static/src/img/Picture10.png" style="float:left;padding-right: 20px;"/>
+                    <p>
+                        <h6 style="padding-top: 50px;">Alisson Theuillon – Quality Responsibe</h6>
+                    </p>
+                </div>
+                <div style="clear: both; float: right;  width: 40%; text-align: right;">
+                    <img src="/offer_template/static/src/img/Picture11.png" style="float:right;padding-left: 20px;"/>
+                    <p>
+                        <h6 style="padding-top: 50px;">Isabelle Duplan – HR Manager</h6>
+                    </p>
+                </div>
+                <div style="clear: both; float: left;  width: 50%; text-align: left;">
+                    <img src="/offer_template/static/src/img/Picture12.jpeg" style="float:left;padding-right: 20px;"/>
+                    <p>
+                        <h6 style="padding-top: 50px;">Sophie Deleuze – Business Developer</h6>
+                    </p>
+                </div>
+                <div style="clear: both; float: right;  width: 50%; text-align: right;">
+                    <img src="/offer_template/static/src/img/Picture13.png" style="float:right;padding-left: 20px;"/>
+                    <p>
+                        <h6 style="padding-top: 50px; ">Quentin Chayot – TIS Coordinator</h6>
+                    </p>
+                </div>
+                <div style="clear: both; float: left;  width: 50%; text-align: left;">
+                    <img src="/offer_template/static/src/img/Picture14.png" style="float:left;padding-right: 20px;"/>
+                    <p>
+                        <h6 style="padding-top: 50px;">Claire Mocquax – TIS Coordinator</h6>
+                    </p>
+                </div>
+                <div style="clear: both; float: right;  width: 50%; text-align: right;">
+                    <img src="/offer_template/static/src/img/Picture15.png" style="float:right;padding-left: 20px;"/>
+                    <p>
+                        <h6 style="padding-top: 50px;">Myriam Saadan – TIS Coordinator</h6>
+                    </p>
+                </div>
+
+
+
+
+            <div class="page" style="page-break-after:always;clear:both"/>
+            <div class="page" name="title2" style="page-break-after:always;">
+                <!-- Title2 -->
+                <h1>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:21px;">2</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:21px;">Objet de l’offre
+                    </span>
+                </h1>
+                <p t-field="doc.offer_title2"/>
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:18px;">2 .1</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:18px;">Historique des Versions
+                    </span>
+                </h3>
+                <p t-field="doc.offer_title21"/>
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:18px;">2 .2</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:18px;">Documents de Référence
+                    </span>
+                </h3>
+                <p t-field="doc.offer_title22"/>
+                <!-- title3 -->
+                <h1>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:21px;">3</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:21px;">Proposition technique
+                    </span>
+                </h1>
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:18px;">3 .1</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:18px;">Data Integrity
+                    </span>
+                </h3>
+                <p t-field="doc.offer_title31"/>
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:18px;">3 .2</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:18px;">Cybersecruity
+                    </span>
+                </h3>
+                <p t-field="doc.offer_title32"/>
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:18px;">3 .3</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:18px;">Stratégie de Validation
+                    </span>
+                </h3>
+                <p t-field="doc.offer_title33"/>
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:18px;">3 .4</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:18px;">Scope du projet
+                    </span>
+                </h3>
+                <p t-field="doc.offer_title34"/>
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:18px;">3 .5</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:18px;">Liste des délivrables
+                    </span>
+                </h3>
+                <p t-field="doc.offer_title35"/>
+            </div>
+                <!-- title4 -->
+                 <div class="page" style="page-break-after:always;clear:both">
+                <h1>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:21px;">4</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:21px;">Organisation
+                    </span>
+                </h1>
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:18px;">4 .1</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:18px;">Planning
+                    </span>
+                </h3>
+                <p t-field="doc.offer_title41"/>
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:18px;">4 .2</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:18px;">Pilote de projet
+                    </span>
+                </h3>
+                <p t-field="doc.offer_title42"/>
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:18px;">4 .3</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:18px;">Acteurs du projet
+                    </span>
+                </h3>
+                <p t-field="doc.offer_title43"/>
+                <img t-if="doc.offer_title43img" t-att-src="image_data_uri(doc.offer_title43img)"/>
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:18px;">4 .4</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:18px;">Gestion du turnover
+                    </span>
+                </h3>
+                <p t-field="doc.offer_title44"/>
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:18px;">4 .5</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:18px;">Méthodologie
+                    </span>
+                </h3>
+                <h5>4.5.1 Prérequis</h5>
+                <p t-field="doc.offer_title451"/>
+                <h5>4.5.2 Spécification et standards client</h5>
+                <p t-field="doc.offer_title452"/>
+                <h5>4.5.3 Coordination</h5>
+                <p t-field="doc.offer_title453"/>
+                <h5>4.5.4 Remarques générales</h5>
+                <p t-field="doc.offer_title454"/>
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:18px;">4 .6</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:18px;">Formations
+                    </span>
+                </h3>
+                <p t-field="doc.offer_title46"/>
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:18px;">4 .7</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:18px;">Formation utilisateur
+                    </span>
+                </h3>
+                <p t-field="doc.offer_title47"/>
+                 </div>
+                <!-- title5 -->
+                 <div class="page" style="page-break-after:always;clear:both">
+                <h1>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:21px;">5</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:21px;">Prix
+                    </span>
+                </h1>
+
+                <table class="table table-sm o_main_table">
+                    <thead style="display: table-row-group">
+                        <tr>
+                            <th name="th_description" class="text-left">Description</th>
+                            <th name="th_subtotal" class="text-right">Total Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="sale_tbody">
+                        <t t-set="current_subtotal" t-value="0"/>
+
+                        <t t-foreach="doc.order_line" t-as="line">
+
+                            <t t-set="current_subtotal" t-value="current_subtotal + line.price_subtotal"
+                               groups="account.group_show_line_subtotals_tax_excluded"/>
+                            <t t-set="current_subtotal" t-value="current_subtotal + line.price_total"
+                               groups="account.group_show_line_subtotals_tax_included"/>
+
+                            <tr t-att-class="'bg-200 font-weight-bold o_line_section' if line.display_type == 'line_section' else 'font-italic o_line_note' if line.display_type == 'line_note' else ''">
+                                <t t-if="not line.display_type">
+                                    <td name="td_name">
+                                        <span t-field="line.name"/>
+                                    </td>
+
+
+                                    <td name="td_subtotal" class="text-right o_price_total">
+                                        <span t-field="line.price_subtotal"/>
+                                    </td>
+                                </t>
+                                <t t-if="line.display_type == 'line_section'">
+                                    <td name="td_section_line" colspan="99">
+                                        <span t-field="line.name"/>
+                                    </td>
+                                    <t t-set="current_section" t-value="line"/>
+                                    <t t-set="current_subtotal" t-value="0"/>
+                                </t>
+                                <t t-if="line.display_type == 'line_note'">
+                                    <td name="td_note_line" colspan="99">
+                                        <span t-field="line.name"/>
+                                    </td>
+                                </t>
+                            </tr>
+
+                            <t t-if="current_section and (line_last or doc.order_line[line_index+1].display_type == 'line_section')">
+                                <tr class="is-subtotal text-right">
+                                    <td name="td_section_subtotal" colspan="99">
+                                        <h6 class="mr16">Subtotal</h6>
+                                        <span
+                                                t-esc="current_subtotal"
+                                                t-options='{"widget": "monetary", "display_currency": doc.pricelist_id.currency_id}'
+                                        />
+                                    </td>
+                                </tr>
+                            </t>
+                        </t>
+                    </tbody>
+
+                </table>
+                <div class="clearfix" name="so_total_summary">
+                    <div id="total" class="row" name="total">
+                        <div t-attf-class="#{'col-4' if report_type != 'html' else 'col-sm-7 col-md-5'} ml-auto">
+                            <table class="table table-sm">
+                                <tr class="border-black o_subtotal" style="">
+                                    <td name="td_amount_untaxed_label">
+                                        <h6>Total HT Hors Support</h6>
+                                    </td>
+                                    <td name="td_amount_untaxed" class="text-right">
+                                        <span t-field="doc.amount_untaxed"/>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- end price table -->
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:18px;">5 .1</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:18px;">Disponibilité et Support
+                        RealDev
+                    </span>
+                </h3>
+                <p t-field="doc.offer_title51"/>
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:18px;">5 .2</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:18px;">Garantie de continuité de
+                        projet
+                    </span>
+                </h3>
+                <p t-field="doc.offer_title52"/>
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:18px;">5 .3</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:18px;">Confidentialité
+                    </span>
+                </h3>
+                <p t-field="doc.offer_title53"/>
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:18px;">5 .4</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:18px;">Ne sont pas compris dans
+                        nos prix (Exclusions)
+                    </span>
+                </h3>
+                <p t-field="doc.offer_title54"/>
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:18px;">5 .5</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:18px;">Voyage
+                    </span>
+                </h3>
+                <p t-field="doc.offer_title55"/>
+                <h3>
+                    <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:18px;">5 .6</span>
+                    <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:18px;">Conditions de paiement
+                    </span>
+                </h3>
+                <p t-field="doc.offer_title56"/>
+            </div>
+                <!-- title6 -->
+                <div class="page" name="title61" style="page-break-after:always;">
+                    <h1>
+                        <span style="font-family:Gadugi;color:rgb(46,117,181);font-size:21px;">6</span>
+                        <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:21px;">Liste des Annexes
+                        </span>
+                    </h1>
+                    <h2>
+                        <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:20px;">ANNEXE 01 – Tarifs en
+                            régie 2020
+                        </span>
+                    </h2>
+                    <img src="/offer_template/static/src/img/annexe1.png" style="height:auto; width:90%; margin-left: 5%; margin-right: 5%;"/>
+                </div>
+                <div class="page" name="title62" style="page-break-after:always;">
+                    <h2>
+                        <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:20px;">ANNEXE 02 –
+                            Certificat ISO9001 :2015
+                        </span>
+                    </h2>
+                    <img src="/offer_template/static/src/img/annexe2.png" style="height:auto; width:90%; margin-left: 5%; margin-right: 5%;"/>
+                </div>
+                <div class="page" name="title63" style="page-break-after:always;">
+                    <h2>
+                        <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:20px;">ANNEXE 03 –
+                            ATTESTATION D’ASSURANCE
+                        </span>
+                    </h2>
+                    <img src="/offer_template/static/src/img/annexe3.png" style="height:auto; width:90%; margin-left: 5%; margin-right: 5%;"/>
+                </div>
+                <div class="page" name="title64" style="page-break-after:always;">
+                    <h2>
+                        <span style="font-family: Gadugi;color: rgb(46, 117, 181);font-size:20px;">ANNEXE 04 – POLITIQUE
+                            QHSE
+                        </span>
+                    </h2>
+                    <img src="/offer_template/static/src/img/annexe4.png" style="height:auto; width:90%; margin-left: 5%; margin-right: 5%;"/>
+                </div>
+
+
+
+
+            <!-- end page content -->
+        </div>
+
+        <!-- footer -->
+
+        <div t-attf-class="footer">
+            <div class="row mt8" >
+                <div class="col-5">
+                    <span>RealDev Services</span>
+                    <br/>
+                    <span>Rue de Ransbeek 230</span>
+                    <br/>
+                    <span>1120 Neder-Over-Heembeek</span>
+                </div>
+
+                <div class="col-5 text-right">
+                    <img src="/offer_template/static/src/img/iso.png" style="width: 110px;float:left;"/>
+                    <div>
+                        <span>TVA : BE0 552 617 314</span>
+                        <br/>
+                        <span>Tel : +32 (0)2 248 02 00</span>
+                        <br/>
+                        <span>www.realdev.be</span>
+                    </div>
+                </div>
+                <div t-if="report_type == 'pdf'" class="col-1">
+                    Page:
+                    <span class="page"/>
+                    /
+                    <span class="topage"/>
+                </div>
+                <div style="clear:both;"/>
+            </div>
+        </div>
+    </template>
+    <template id="report_saleoffer">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="offer_template.report_saleoffer_document" t-lang="doc.partner_id.lang"/>
+            </t>
+        </t>
+    </template>
+    <record id="action_report_saleoffer" model="ir.actions.report">
+        <field name="name">Sale Offer</field>
+        <field name="model">sale.order</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">offer_template.report_saleoffer</field>
+        <field name="report_file">offer_template.report_saleoffer</field>
+        <field name="print_report_name">'Offer'</field>
+        <field name="binding_model_id" ref="model_sale_order"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>
+

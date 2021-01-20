@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sale_order_template_view_form_inherit_offer_tis" model="ir.ui.view">
+        <field name="name">sale.order.template.form.inherit.sale_quotation_builder</field>
+        <field name="inherit_id" ref="sale_management.sale_order_template_view_form"/>
+        <field name="model">sale.order.template</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+             <xpath expr="//notebook[1]" position="inside">
+                  <page string="Lettre" name="page2">
+                      <field name="offer_page2"/>
+                  </page>
+                 <page string="Objet de l’offre" name="tile2">
+                     <group>
+                         <field name="offer_title2"/>
+                         <field name="offer_title21"/>
+                         <field name="offer_title22"/>
+                     </group>
+
+                 </page>
+                 <page string="Proposition technique" name="title3">
+                     <group>
+                         <field name="offer_title31"/>
+                         <field name="offer_title32"/>
+                         <field name="offer_title33"/>
+                         <field name="offer_title34"/>
+                         <field name="offer_title35"/>
+                     </group>
+                 </page>
+                 <page string="Organisation" name="title4">
+                          <group>
+                              <field name="offer_title41"/>
+                         <field name="offer_title42"/>
+                         <field name="offer_title43"/>
+                         <field name="offer_title43img" widget="image" class="oe_avatar"/>
+                         <field name="offer_title44"/>
+                         <field name="offer_title451"/>
+                          <field name="offer_title452"/>
+                         <field name="offer_title453"/>
+                         <field name="offer_title454"/>
+                         <field name="offer_title46"/>
+                         <field name="offer_title47"/>
+                     </group>
+                 </page>
+                 <page string="Prix" name="title5">
+                     <group>
+                         <field name="offer_title51"/>
+                        <field name="offer_title52"/>
+                         <field name="offer_title53"/>
+                         <field name="offer_title54"/>
+                         <field name="offer_title55"/>
+                         <field name="offer_title56"/>
+                     </group>
+                 </page>
+            </xpath>
+        </field>
+    </record>
+ <record id="sale_order_view_form_offer_tis" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+             <xpath expr="//notebook[1]" position="inside">
+                  <page string="Lettre" name="page2">
+                      <field name="offer_page2"/>
+                  </page>
+                 <page string="Objet de l’offre" name="tile2">
+                     <group>
+                         <field name="offer_title2"/>
+                         <field name="offer_title21"/>
+                         <field name="offer_title22"/>
+                     </group>
+
+                 </page>
+                 <page string="Proposition technique" name="title3">
+                     <group>
+                         <field name="offer_title31"/>
+                         <field name="offer_title32"/>
+                         <field name="offer_title33"/>
+                         <field name="offer_title34"/>
+                         <field name="offer_title35"/>
+                     </group>
+                 </page>
+                 <page string="Organisation" name="title4">
+                          <group>
+                              <field name="offer_title41"/>
+                         <field name="offer_title42"/>
+                         <field name="offer_title43"/>
+                         <field name="offer_title43img" widget="image" class="oe_avatar"/>
+                         <field name="offer_title44"/>
+                         <field name="offer_title451"/>
+                          <field name="offer_title452"/>
+                         <field name="offer_title453"/>
+                         <field name="offer_title454"/>
+                         <field name="offer_title46"/>
+                         <field name="offer_title47"/>
+                     </group>
+                 </page>
+                 <page string="Prix" name="title5">
+                     <group>
+                         <field name="offer_title51"/>
+                        <field name="offer_title52"/>
+                         <field name="offer_title53"/>
+                         <field name="offer_title54"/>
+                         <field name="offer_title55"/>
+                         <field name="offer_title56"/>
+                     </group>
+                 </page>
+            </xpath>
+        </field>
+ </record>
+</odoo>
