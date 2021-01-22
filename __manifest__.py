@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'license': 'LGPL-3',
-    'name': "Offer template",
+    'name': "Offers template",
     'summary': "",
     'author': "VIM IT",
     'website': "https://vimit.io",
