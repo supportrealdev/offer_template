@@ -5,7 +5,13 @@ from odoo import api, fields, models,  _
 class SaleOrderTemplate(models.Model):
     _inherit = "sale.order.template"
 
+    offer_pagecover = fields.Html('Cover Page')
     offer_page2 = fields.Html('Offer Page2')
+    offer_title1 = fields.Html('A propos de RealDev')
+    offer_title11 = fields.Html('Notre Board')
+    offer_title12 = fields.Html('Notre Management')
+    offer_title13 = fields.Html('Notre Staff')
+    offer_title2 = fields.Html('Objet de l’offre')
     offer_title2 = fields.Html('Objet de l’offre')
     offer_title21 = fields.Html('Historique des Versions')
     offer_title22 = fields.Html('Documents de Référence')
@@ -36,13 +42,18 @@ class SaleOrderTemplate(models.Model):
 class SaleOrder(models.Model):
     _inherit = "sale.order"
 
+    offer_pagecover = fields.Html('Cover Page')
     offer_page2 = fields.Html('Offer Page2')
+    offer_title1 = fields.Html('A propos de RealDev')
+    offer_title11 = fields.Html('Notre Board')
+    offer_title12 = fields.Html('Notre Management')
+    offer_title13 = fields.Html('Notre Staff')
     offer_title2 = fields.Html('Objet de l’offre')
     offer_title21 = fields.Html('Historique des Versions')
     offer_title22 = fields.Html('Documents de Référence')
     offer_title31 = fields.Html('Data Integrity')
     offer_title32 = fields.Html('Cybersecruity ')
-    offer_title33 = fields.Html('3.3Stratégie de Validation')
+    offer_title33 = fields.Html('Stratégie de Validation')
     offer_title34 = fields.Html('Scope du projet')
     offer_title35 = fields.Html('Liste des délivrables')
     offer_title41 = fields.Html('Planning')
@@ -81,7 +92,7 @@ class SaleOrder(models.Model):
             self.offer_title452 =  self.sale_order_template_id.offer_title452
             self.offer_title451 =  self.sale_order_template_id.offer_title451
             self.offer_title44 =  self.sale_order_template_id.offer_title44
-            self.offer_title43img =  self.sale_order_template_id.offer_title43img
+            # self.offer_title43img =  self.sale_order_template_id.offer_title43img
             self.offer_title43 =  self.sale_order_template_id.offer_title43
             self.offer_title42 =  self.sale_order_template_id.offer_title42
             self.offer_title41 =  self.sale_order_template_id.offer_title41
@@ -92,4 +103,11 @@ class SaleOrder(models.Model):
             self.offer_title31 =  self.sale_order_template_id.offer_title31
             self.offer_title22 =  self.sale_order_template_id.offer_title22
             self.offer_title21 =  self.sale_order_template_id.offer_title21
+
+            self.offer_title1 =  self.sale_order_template_id.offer_title1
+            self.offer_title11 =  self.sale_order_template_id.offer_title11
+            self.offer_title12 =  self.sale_order_template_id.offer_title12
+            self.offer_title13 =  self.sale_order_template_id.offer_title13
+
+            self.offer_pagecover =  self.sale_order_template_id.offer_pagecover
 

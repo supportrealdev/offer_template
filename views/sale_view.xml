@@ -7,9 +7,20 @@
         <field name="type">form</field>
         <field name="arch" type="xml">
              <xpath expr="//notebook[1]" position="inside">
+                 <page string="Cover Page" name="page0">
+                      <field name="offer_pagecover"/>
+                  </page>
                   <page string="Lettre" name="page2">
                       <field name="offer_page2"/>
                   </page>
+                 <page string="A propos de RealDev" name="page1">
+                     <group>
+                         <field name="offer_title1"/>
+                         <field name="offer_title11"/>
+                         <field name="offer_title12"/>
+                         <field name="offer_title13"/>
+                     </group>
+                 </page>
                  <page string="Objet de l’offre" name="tile2">
                      <group>
                          <field name="offer_title2"/>
@@ -32,7 +43,7 @@
                               <field name="offer_title41"/>
                          <field name="offer_title42"/>
                          <field name="offer_title43"/>
-                         <field name="offer_title43img" widget="image" class="oe_avatar"/>
+<!--                         <field name="offer_title43img" widget="image" class="oe_avatar"/>-->
                          <field name="offer_title44"/>
                          <field name="offer_title451"/>
                           <field name="offer_title452"/>
@@ -61,9 +72,20 @@
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
              <xpath expr="//notebook[1]" position="inside">
+                 <page string="Cover Page" name="page0">
+                      <field name="offer_pagecover"/>
+                  </page>
                   <page string="Lettre" name="page2">
                       <field name="offer_page2"/>
                   </page>
+                 <page string="A propos de RealDev" name="page1">
+                     <group>
+                         <field name="offer_title1"/>
+                         <field name="offer_title11"/>
+                         <field name="offer_title12"/>
+                         <field name="offer_title13"/>
+                     </group>
+                 </page>
                  <page string="Objet de l’offre" name="tile2">
                      <group>
                          <field name="offer_title2"/>
@@ -86,7 +108,7 @@
                               <field name="offer_title41"/>
                          <field name="offer_title42"/>
                          <field name="offer_title43"/>
-                         <field name="offer_title43img" widget="image" class="oe_avatar"/>
+<!--                         <field name="offer_title43img" widget="image" class="oe_avatar"/>-->
                          <field name="offer_title44"/>
                          <field name="offer_title451"/>
                           <field name="offer_title452"/>
