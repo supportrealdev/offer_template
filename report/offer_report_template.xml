@@ -9,8 +9,8 @@
                     <div class="col-6">
                         <img src="/offer_template/static/src/img/logo.png" style="width:200px"/>
                     </div>
-                    <div class="col-5"/>
-                    <div t-if="report_type == 'pdf'" class="col-1">
+                    <div class="col-4"/>
+                    <div t-if="report_type == 'pdf'" class="col-2">
                     Page:
                     <span class="page"/>
                     /
@@ -58,14 +58,13 @@ url("/offer_template/static/src/font/gadugi-normal.ttf") format("truetype");
                 h5{
                 font-size: 16px;
                 }
+                .o_report_layout_clean table tbody tr td {
+                padding: 7px 5px;
+                }
             </style>
              <div class="page" style="page-break-after:always;">
                 <div class="oe_structure"/>
                 <span t-field="doc.offer_pagecover"/>
-            </div>
-             <div class="page" style="page-break-after:always;">
-                <div class="oe_structure"/>
-                <span t-field="doc.offer_page2"/>
             </div>
             <div class="page" style="page-break-after:always;">
                 <div class="oe_structure"/>
@@ -92,55 +91,57 @@ url("/offer_template/static/src/font/gadugi-normal.ttf") format("truetype");
             <div class="page" name="title2" style="page-break-after:always;">
                 <!-- Title2 -->
                 <h1>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">2</span>
+                    <span style="font-family:Gadugi;color:#98B736;">2</span>
                     <span style="font-family: Gadugi;color: #98B736;">Objet de l’offre
                     </span>
                 </h1>
                 <p t-field="doc.offer_title2"/>
                 <h3>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">2 .1</span>
+                    <span style="font-family:Gadugi;color:#98B736;">2 .1</span>
                     <span style="font-family: Gadugi;color: #98B736;">Historique des Versions
                     </span>
                 </h3>
                 <p t-field="doc.offer_title21"/>
                 <h3>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">2 .2</span>
+                    <span style="font-family:Gadugi;color:#98B736;">2 .2</span>
                     <span style="font-family: Gadugi;color: #98B736;">Documents de Référence
                     </span>
                 </h3>
                 <p t-field="doc.offer_title22"/>
                 <!-- title3 -->
+            </div>
+            <div class="page" name="title3" style="page-break-after:always;">
                 <h1>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">3</span>
+                    <span style="font-family:Gadugi;color:#98B736;">3</span>
                     <span style="font-family: Gadugi;color: #98B736;">Proposition technique
                     </span>
                 </h1>
                 <h3>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">3 .1</span>
+                    <span style="font-family:Gadugi;color:#98B736;">3 .1</span>
                     <span style="font-family: Gadugi;color: #98B736;">Data Integrity
                     </span>
                 </h3>
                 <p t-field="doc.offer_title31"/>
                 <h3>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">3 .2</span>
+                    <span style="font-family:Gadugi;color:#98B736;">3 .2</span>
                     <span style="font-family: Gadugi;color: #98B736;">Cybersecruity
                     </span>
                 </h3>
                 <p t-field="doc.offer_title32"/>
                 <h3>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">3 .3</span>
+                    <span style="font-family:Gadugi;color:#98B736;">3 .3</span>
                     <span style="font-family: Gadugi;color: #98B736;">Stratégie de Validation
                     </span>
                 </h3>
                 <p t-field="doc.offer_title33"/>
                 <h3>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">3 .4</span>
+                    <span style="font-family:Gadugi;color:#98B736;">3 .4</span>
                     <span style="font-family: Gadugi;color: #98B736;">Scope du projet
                     </span>
                 </h3>
                 <p t-field="doc.offer_title34"/>
                 <h3>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">3 .5</span>
+                    <span style="font-family:Gadugi;color:#98B736;">3 .5</span>
                     <span style="font-family: Gadugi;color: #98B736;">Liste des délivrables
                     </span>
                 </h3>
@@ -149,37 +150,37 @@ url("/offer_template/static/src/font/gadugi-normal.ttf") format("truetype");
                 <!-- title4 -->
                  <div class="page" style="page-break-after:always;clear:both">
                 <h1>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">4</span>
+                    <span style="font-family:Gadugi;color:#98B736;">4</span>
                     <span style="font-family: Gadugi;color: #98B736;">Organisation
                     </span>
                 </h1>
                 <h3>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">4 .1</span>
+                    <span style="font-family:Gadugi;color:#98B736;">4 .1</span>
                     <span style="font-family: Gadugi;color: #98B736;">Planning
                     </span>
                 </h3>
                 <p t-field="doc.offer_title41"/>
                 <h3>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">4 .2</span>
+                    <span style="font-family:Gadugi;color:#98B736;">4 .2</span>
                     <span style="font-family: Gadugi;color: #98B736;">Pilote de projet
                     </span>
                 </h3>
                 <p t-field="doc.offer_title42"/>
                 <h3>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">4 .3</span>
+                    <span style="font-family:Gadugi;color:#98B736;">4 .3</span>
                     <span style="font-family: Gadugi;color: #98B736;">Acteurs du projet
                     </span>
                 </h3>
                 <p t-field="doc.offer_title43"/>
 <!--                <img t-if="doc.offer_title43img" t-att-src="image_data_uri(doc.offer_title43img)"/>-->
                 <h3>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">4 .4</span>
+                    <span style="font-family:Gadugi;color:#98B736;">4 .4</span>
                     <span style="font-family: Gadugi;color: #98B736;">Gestion du turnover
                     </span>
                 </h3>
                 <p t-field="doc.offer_title44"/>
                 <h3>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">4 .5</span>
+                    <span style="font-family:Gadugi;color:#98B736;">4 .5</span>
                     <span style="font-family: Gadugi;color: #98B736;">Méthodologie
                     </span>
                 </h3>
@@ -192,13 +193,13 @@ url("/offer_template/static/src/font/gadugi-normal.ttf") format("truetype");
                 <h5 style="font-family: Gadugi;color: #98B736;">4.5.4 Remarques générales</h5>
                 <p t-field="doc.offer_title454"/>
                 <h3>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">4 .6</span>
+                    <span style="font-family:Gadugi;color:#98B736;">4 .6</span>
                     <span style="font-family: Gadugi;color: #98B736;">Formations
                     </span>
                 </h3>
                 <p t-field="doc.offer_title46"/>
                 <h3>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">4 .7</span>
+                    <span style="font-family:Gadugi;color:#98B736;">4 .7</span>
                     <span style="font-family: Gadugi;color: #98B736;">Formation utilisateur
                     </span>
                 </h3>
@@ -207,16 +208,16 @@ url("/offer_template/static/src/font/gadugi-normal.ttf") format("truetype");
                 <!-- title5 -->
                  <div class="page" style="page-break-after:always;clear:both">
                 <h1>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">5</span>
+                    <span style="font-family:Gadugi;color:#98B736;">5</span>
                     <span style="font-family: Gadugi;color: #98B736;">Prix
                     </span>
                 </h1>
-
+ <br/>
                 <table class="table table-sm o_main_table">
                     <thead style="display: table-row-group">
                         <tr>
                             <th name="th_description" class="text-left">Description</th>
-                            <th name="th_subtotal" class="text-right">Total Price</th>
+                            <th name="th_subtotal" class="text-right">Prix</th>
                         </tr>
                     </thead>
                     <tbody class="sale_tbody">
@@ -259,7 +260,7 @@ url("/offer_template/static/src/font/gadugi-normal.ttf") format("truetype");
                             <t t-if="current_section and (line_last or doc.order_line[line_index+1].display_type == 'line_section')">
                                 <tr class="is-subtotal text-right">
                                     <td name="td_section_subtotal" colspan="99">
-                                        <h6 class="mr16">Subtotal</h6>
+                                        <h6 class="mr16">Sous Total</h6>
                                         <span
                                                 t-esc="current_subtotal"
                                                 t-options='{"widget": "monetary", "display_currency": doc.pricelist_id.currency_id}'
@@ -271,13 +272,51 @@ url("/offer_template/static/src/font/gadugi-normal.ttf") format("truetype");
                     </tbody>
 
                 </table>
+                     <div t-if="doc.sale_order_option_ids and doc.state in ['draft', 'sent']">
+            <t t-set="has_option_discount" t-value="any(option.discount != 0.0 for option in doc.sale_order_option_ids)" />
+            <h4 name="h_optional_products">
+                <span>Options</span>
+            </h4>
+            <table name="table_optional_products" class="table table-sm">
+                <thead>
+                    <tr>
+                        <th name="th_option_name" class="text-left">Description</th>
+                        <th t-if="has_option_discount" name="th_option_discount" groups="product.group_discount_per_so_line" class="text-left">Rem.%</th>
+                        <th name="th_option_price_unit" class="text-right">Prix Unitaire</th>
+                    </tr>
+                </thead>
+                <tbody class="sale_tbody">
+                    <tr t-foreach="doc.sale_order_option_ids" t-as="option">
+                        <td name="td_option_name">
+                            <span t-field="option.name"/>
+                        </td>
+                        <td t-if="has_option_discount" name="td_option_discount" groups="product.group_discount_per_so_line">
+                            <strong t-if="option.discount != 0.0" class="text-info">
+                                <t t-esc="((option.discount % 1) and '%s' or '%d') % option.discount"/>%
+                            </strong>
+                        </td>
+                        <td name="td_option_price_unit">
+                            <strong class="text-right">
+                                <div t-field="option.price_unit"
+                                    t-options='{"widget": "monetary", "display_currency": doc.pricelist_id.currency_id}'
+                                    t-att-style="option.discount and 'text-decoration: line-through' or None"
+                                    t-att-class="option.discount and 'text-danger' or None"/>
+                                <div t-if="option.discount">
+                                    <t t-esc="'%.2f' % ((1-option.discount / 100.0) * option.price_unit)"/>
+                                </div>
+                            </strong>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
                 <div class="clearfix" name="so_total_summary">
                     <div id="total" class="row" name="total">
                         <div t-attf-class="#{'col-4' if report_type != 'html' else 'col-sm-7 col-md-5'} ml-auto">
                             <table class="table table-sm">
                                 <tr class="border-black o_subtotal" style="">
                                     <td name="td_amount_untaxed_label">
-                                        <h6>Total HT Hors Support</h6>
+                                        <h6>Total HT</h6>
                                     </td>
                                     <td name="td_amount_untaxed" class="text-right">
                                         <span t-field="doc.amount_untaxed"/>
@@ -290,40 +329,40 @@ url("/offer_template/static/src/font/gadugi-normal.ttf") format("truetype");
                 </div>
                 <!-- end price table -->
                 <h3>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">5 .1</span>
+                    <span style="font-family:Gadugi;color:#98B736;">5 .1</span>
                     <span style="font-family: Gadugi;color: #98B736;">Disponibilité et Support
                         RealDev
                     </span>
                 </h3>
                 <p t-field="doc.offer_title51"/>
                 <h3>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">5 .2</span>
+                    <span style="font-family:Gadugi;color:#98B736;">5 .2</span>
                     <span style="font-family: Gadugi;color: #98B736;">Garantie de continuité de
                         projet
                     </span>
                 </h3>
                 <p t-field="doc.offer_title52"/>
                 <h3>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">5 .3</span>
+                    <span style="font-family:Gadugi;color:#98B736;">5 .3</span>
                     <span style="font-family: Gadugi;color: #98B736;">Confidentialité
                     </span>
                 </h3>
                 <p t-field="doc.offer_title53"/>
                 <h3>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">5 .4</span>
+                    <span style="font-family:Gadugi;color:#98B736;">5 .4</span>
                     <span style="font-family: Gadugi;color: #98B736;">Ne sont pas compris dans
                         nos prix (Exclusions)
                     </span>
                 </h3>
                 <p t-field="doc.offer_title54"/>
                 <h3>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">5 .5</span>
+                    <span style="font-family:Gadugi;color:#98B736;">5 .5</span>
                     <span style="font-family: Gadugi;color: #98B736;">Voyage
                     </span>
                 </h3>
                 <p t-field="doc.offer_title55"/>
                 <h3>
-                    <span style="font-family:Gadugi;color:rgb(46,117,181);">5 .6</span>
+                    <span style="font-family:Gadugi;color:#98B736;">5 .6</span>
                     <span style="font-family: Gadugi;color: #98B736;">Conditions de paiement
                     </span>
                 </h3>
@@ -332,7 +371,7 @@ url("/offer_template/static/src/font/gadugi-normal.ttf") format("truetype");
                 <!-- title6 -->
                 <div class="page" name="title61" style="page-break-after:always;">
                     <h1>
-                        <span style="font-family:Gadugi;color:rgb(46,117,181);">6</span>
+                        <span style="font-family:Gadugi;color:#98B736;">6</span>
                         <span style="font-family: Gadugi;color: #98B736;">Liste des Annexes
                         </span>
                     </h1>
@@ -377,8 +416,8 @@ url("/offer_template/static/src/font/gadugi-normal.ttf") format("truetype");
         <!-- footer -->
 
         <div t-attf-class="footer">
-            <div class="row mt8" >
-                <div class="col-5">
+            <div class="row mt8" style="font-size:9px;">
+                <div class="col-6">
                     <span>RealDev Services</span>
                     <br/>
                     <span>Rue de Ransbeek 230</span>
@@ -386,7 +425,7 @@ url("/offer_template/static/src/font/gadugi-normal.ttf") format("truetype");
                     <span>1120 Neder-Over-Heembeek</span>
                 </div>
 
-                <div class="col-5 text-right">
+                <div class="col-6 text-right">
                     <img src="/offer_template/static/src/img/iso.png" style="width: 110px;float:left;"/>
                     <div>
                         <span>TVA : BE0 552 617 314</span>
