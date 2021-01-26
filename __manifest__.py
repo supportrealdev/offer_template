@@ -14,6 +14,7 @@
     'data': [
         'report/offer_report_template.xml',
         'views/sale_view.xml',
+        'views/sale_prtail_template.xml',
     ],
     'images': [
 
